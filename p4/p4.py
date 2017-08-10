@@ -5,8 +5,7 @@ import re
 import subprocess
 import tempfile
 
-P4_DIR = os.path.dirname(os.path.abspath(__file__))
-LIB_DIR = os.path.join(P4_DIR, "lib")
+import p4
 
 def main():
     # parse arguments
@@ -27,7 +26,7 @@ def copy_source(src, dest):
     distutils.dir_util.copy_tree(src, package_dir)
 
     # copy the p4 libraries
-    distutils.dir_util.copy_tree(LIB_DIR, package_dir)
+    distutils.dir_util.copy_tree(p4.LIB_DIR, package_dir)
 
     return package_dir
 
@@ -49,7 +48,3 @@ def preprocess_source(source_dir):
 
 def preprocess_hash_comments(line):
     return re.sub('//##', '', line)
-
-
-if __name__ == '__main__':
-    main()

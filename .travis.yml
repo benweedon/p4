@@ -1,0 +1,19 @@
+language: python
+python:
+- '3.2'
+- '3.3'
+- '3.4'
+- '3.5'
+- '3.6'
+install: true
+script: true
+notifications:
+  email: false
+deploy:
+  provider: pypi
+  user: BenWeedon
+  password:
+    secure: BZgNG0KlKCcxvXNc5KEHSlMDDVtGMU1LnpMGEHM6fN7L078Wd4G9vP6qnmJvoX1T8K5YAUy7z2rgx/HwqEStwr4nw0dH3ZfmZ/H5+NTJiW5YaI33Ry032JQ2fVH3b7oZKdpe22NKpSrcNdSo9tdbmRouY71U6lEv2gCMzCgTs8Y7ef/Do5TfwCSc7XHlzhV+XMgm15CfBjc8wIpMT637u3VlbWtjm5rC160Yj0miaiutxwoRGCZXLX+iPlYF+ZLkNXc+NY26zpfXoBKdaGiOhJM8BBg9JM9vER7ASkmaGed+Nc/yEcsooE4mRrx3M3AyRzpWpx32vYZreQy4fTM8c9QQmIGRFuFa01e/9oMp5S4qFrtZn8djyE2WbpdsXMk+MUX1WSkV78Gl/hv+6ducnjU+B9+ALv9uhjDQkXvcxY5OautrugyEATLUDIOJ8ua6XTJPEoTk5+zhwf45JqFIz8ar/L44OhA1smAdFrldwTn0Zuw8EBdz9Jizkz37OzpCUeX4O6t5o0gtte4er0ZxlY5Mw6vubg4aw5CEHLVl/90VD8NuR4IdvVJs1BsmIj+1xVeFiTHE+s0ixBJENCz7Sw2mto4RwdCEK/V4RxyeS3xGHlgyWn+JOvkXRy95dRW0z2eDZIdgdPO8Cc5AV12t1WxGY0HJok4rDuevJKGGoPI=
+  on:
+    tags: true
+    branch: master
