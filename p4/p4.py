@@ -26,7 +26,7 @@ def copy_source(src, dest):
     distutils.dir_util.copy_tree(src, package_dir)
 
     # copy the p4 libraries
-    distutils.dir_util.copy_tree(p4.LIB_DIR, package_dir)
+    distutils.dir_util.copy_tree(p4.INC_DIR, package_dir)
 
     return package_dir
 

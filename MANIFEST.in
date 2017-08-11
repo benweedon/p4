@@ -1,1 +1,1 @@
-recursive-include lib
+recursive-include p4/p4inc *
