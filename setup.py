@@ -8,6 +8,7 @@ def get_readme_text():
 setup(
     name = 'p4',
     packages = find_packages(),
+    include_package_data = True,
     install_requires = [],
     version = p4.VERSION,
     description = 'A Python Pre-Processor for the Processing system',
